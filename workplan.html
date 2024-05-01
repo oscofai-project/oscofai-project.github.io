@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>OSCOFAI</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/oscofai_favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+
+        .accordion {
+            /*font-size: 1rem;*/
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        .accordion-header,
+        .accordion-body {
+            background: white;
+        }
+
+        .accordion-header {
+            padding: 1.5em 1.5em;
+            background: #286d90;
+            color: white;
+            cursor: pointer;
+            font-size: .8em;
+            letter-spacing: .1em;
+            transition: all .3s;
+            text-transform: uppercase;
+        }
+
+        .accordion__item {
+            border-bottom: 1px solid #286d90;
+        }
+
+        .accordion__item .accordion__item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .accordion-header:hover {
+            background: #224759;
+            position: relative;
+            z-index: 5;
+        }
+
+        .accordion-body {
+            background: #fcfcfc;
+            color: #353535;
+            display: none;
+        }
+
+        .accordion-body__contents {
+            padding: 1.5em 1.5em;
+            font-size: .95em;
+        }
+
+        .accordion__item.active:last-child .accordion-header {
+            border-radius: none;
+        }
+
+        .accordion:first-child > .accordion__item > .accordion-header {
+            border-bottom: 1px solid transparent;
+        }
+
+        .accordion__item > .accordion-header:after {
+            content: "\f3d0";
+            font-family: IonIcons;
+            font-size: 1.2em;
+            float: right;
+            position: relative;
+            top: -2px;
+            transition: .3s all;
+            transform: rotate(0deg);
+        }
+
+        .accordion__item.active > .accordion-header:after {
+            transform: rotate(-180deg);
+        }
+
+        .accordion__item.active .accordion-header {
+            background: #224759;
+        }
+
+        .accordion__item .accordion__item .accordion-header {
+            background: #f1f1f1;
+            color: #353535;
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                padding: 1em;
+            }
+
+            .accordion {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/oscofai_logo_N.png" alt="" class="img-fluid"></a>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+
+                <li><a class="active " href="index.html">Home</a></li>
+                <li class="dropdown"><a href="#"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <!--              <li><a href="ataglance.html">OSCOFAI at a Glance</a></li>-->
+                        <li><a href="objectives.html">Objectives</a></li>
+                        <li><a href="workplan.html">Work Structure</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="impact.html">Innovation and Impact</a></li>
+
+                <li class="dropdown"><a href="#"><span>Knowledge Hub</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="deliverables.html">Deliverables</a></li>
+                        <!--              <li><a href="#">Presentations</a></li>-->
+                        <li><a href="dissemination.html">Dissemination Materials</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="news.html">News and Events</a></li>
+                <!--          <li class="dropdown"><a href="#"><span>News and Events</span> <i class="bi bi-chevron-down"></i></a>-->
+                <!--            <ul>-->
+                <!--              <li><a href="#">News</a></li>-->
+                <!--              <li><a href="#">Events</a></li>-->
+                <!--            </ul>-->
+                <!--          </li>-->
+
+                <!--          <li><a href="about.html">About</a></li>-->
+<!--                <li><a href="news.html">Services</a></li>-->
+                <!--          <li><a href="portfolio.html">Portfolio</a></li>-->
+                <!--          <li><a href="team.html">Team</a></li>-->
+                <!--          <li><a href="blog.html">Blog</a></li>-->
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Work Structure</h2>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>The Project</li>
+                    <li>Work Structure</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section class="about" data-aos="fade-up">
+        <div class="container">
+            <p>Based on the overall strategy for the OSCOFAI work plan, the work to be performed in the project will be realized through a set of work packages outlined below.</p><br>
+            <div class="row">
+
+                <div class="col-lg-12 pt-4 pt-lg-0">
+                    <div class="accordion js-accordion">
+                        <div class="accordion__item js-accordion-item active">
+                            <div class="accordion-header js-accordion-header">WP1. Actigraphy-based sleep-wake data associated with cognitive function</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    <b>Duration: <i>M01 - M24</i></b><br><br>
+                                    <b>Objectives:</b> Examine associations of sleep-wake data from actigraphy with cognitive function.<br>
+                                    <b> Description of Work:</b> Related to Aim1. Associate 7-day sleep-wake traditional summary actigraphy measures provided by the device software with baseline and changes in cognitive function over time (global composite z scores and individual composite domains z scores).
+                                </div>
+                                <div class="accordion js-accordion">
+                                    <div class="accordion__item js-accordion-item">
+                                        <div class="accordion-header js-accordion-header">Tasks</div>
+                                        <div class="accordion-body js-accordion-body">
+                                            <div class="accordion-body__contents">
+                                                <i class="bx bx-chevrons-right"></i><b>Task 1.1.</b> Identify summary actigraphy measures, including total sleep time, sleep latency, wake time after sleep onset, sleep–wake ratio, and sleep efficiency to use in modeling- Dataset creation<br>
+                                                <i class="bx bx-chevrons-right"></i><b>Task 1.2.</b> Investigate association between actigraphy sleep-wake measures and cognitive function cross-sectionally and prospectively.
+                                            </div><!-- end of sub accordion item body contents -->
+                                        </div><!-- end of sub accordion item body -->
+                                    </div><!-- end of sub accordion item -->
+                                    <div class="accordion__item js-accordion-item">
+                                        <div class="accordion-header js-accordion-header">Deliverables</div>
+                                        <div class="accordion-body js-accordion-body">
+                                            <div class="accordion-body__contents">
+                                                <i class="bx bx-chevrons-right"></i><b>D1.1</b> Actigraphy-based summary measures dataset <br>
+                                                <i class="bx bx-chevrons-right"></i><b>D1.2</b> Actigraphy-based sleep-wake measures associations with cognitive function.
+                                            </div><!-- end of sub accordion item body contents -->
+                                        </div><!-- end of sub accordion item body -->
+                                    </div><!-- end of sub accordion item -->
+                                </div><!-- end of sub accordion -->
+                            </div
+                        </div><!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+
+
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">WP2. Actigraphy data associated with risk of MCI using advanced AI/ML techniques</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <b>Duration: <i>M01 - M24</i></b><br><br>
+                                <b>Objectives:</b> Examine cross-sectional and prospective associations of features extracted from actigraphy time series with MCI incidence using advanced signal processing and machine learning methods.<br>
+                                <b> Description of Work:</b> Related to Aim2. Associate 7-day sleep-wake information with the risk of MCI using advanced ML - AI methods and actigraphy-extracted features.
+                            </div>
+                            <div class="accordion js-accordion">
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Tasks</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>Task 2.1.</b> Actigraphy signal processing and AI - ML computational pipeline development<br>
+                                            <i class="bx bx-chevrons-right"></i><b>Task 2.2.</b> Feature engineering using the developed pipeline<br>
+                                            <i class="bx bx-chevrons-right"></i><b>Task 2.3.</b> ML models development and evaluation using actigraphy extracted features to predict MCI risk
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Deliverables</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>D2.1</b> Feature sets extracted from the actigraphy signal <br>
+                                            <i class="bx bx-chevrons-right"></i><b>D2.2</b> Predictive models of MCI risk based on actigraphy-extracted features
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div><!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+
+
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">WP3. Mediating effects of potential mechanisms</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <b>Duration: <i>M01 - M24</i></b><br><br>
+                                <b>Objectives:</b> Examine whether plasma, CSF, and neuroimaging biomarkers mediate the relationships between sleep-wake cycle and cognitive function/impairment. <br>
+                                <b> Description of Work:</b> Related to Aim 3A. Assess the mediating role of plasma, CSF and neuroimaging biomarkers on the relationships between the sleep-wake information from actigraphy and cognitive function/impairment.
+                            </div>
+                            <div class="accordion js-accordion">
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Tasks</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>Task 3.1.</b> Plasma Aβ, total and p-tau and GlycA analyses <br>
+                                            <i class="bx bx-chevrons-right"></i><b>Task 3.2.</b> Mediation analyses
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Deliverables</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>D3.1</b> Biomarker measures dataset  <br>
+                                            <i class="bx bx-chevrons-right"></i><b>D3.2</b>  Mediation analyses
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div><!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+
+
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">WP4. Design and develop an AI tool predictive of cognitive impairment and associated outcomes of mediating biological mechanisms using actigraphy data </div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <b>Duration: <i>M01 - M24</i></b><br><br>
+                                <b>Objectives:</b> Identify actigraphy-based features predictive of outcomes of the individual mechanisms believed to correlate with cognitive decline. Determine the best combination of a subset of those features for predicting accurately cognitive decline risk. <br>
+                                <b> Description of Work:</b> Related to Aim3B. We will first use feature engineering and machine learning methods to identify good predictors for individual mechanism endpoints first. We will then check across mechanisms to determine the best combination of such features and ML models that best predict MCI-related endpoints when working synergistically.
+                            </div>
+                            <div class="accordion js-accordion">
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Tasks</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>Task 4.1.</b> Build effective predictive models linking actigraphy features to individual biological mechanisms believed to mediate cognitive decline <br>
+                                            <i class="bx bx-chevrons-right"></i><b>Task 4.2.</b> Combine features identified in Task 4.1 to build a parsimonious ML model with input the smallest possible number of features that is highly predictive of cognitive decline <br>
+                                            <i class="bx bx-chevrons-right"></i><b>Task 4.3.</b> Develop an “AI Advisor” tool that can process unseen patient actigraphy data and predict the risk of cognitive decline considering both cross-sectional and longitudinal data.
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Deliverables</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>D4.1</b> Predictive models linking actigraphy features to individual biological mechanism endpoints associated with cognitive decline <br>
+                                            <i class="bx bx-chevrons-right"></i><b>D4.2</b> AI Advisor software tool for assisting clinicians in assessing cognitive decline status based on the objective actigraphy data of the patient
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div><!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+
+
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">WP5. Dissemination and communication </div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <b>Duration: <i>M01 - M24</i></b><br><br>
+                                <b>Objectives:</b> Disseminate and communicate our results to the broader scientific community, patients and their organizations and the society in general. <br>
+                                <b> Description of Work:</b> Create/apply a dissemination plan addressing key stakeholders via institutional websites, social media, press releases, scientific publications, and participation in forums, conferences, and symposia. We also communicate results to diverse audiences, including non-experts (patients, general society), through the website created in the context of the current WP as well as through social media. We will also communicate and spread the results through Athens Alzheimer’s Association (https://alzheimerathens.gr/) addressed to people with dementia, their relatives and health care professionals interested in Alzheimer’s disease; this will also enhance the recruitment.
+                            </div>
+                            <div class="accordion js-accordion">
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Tasks</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>Task 5.1.</b> Develop a dissemination plan including a set of materials (e.g., leaflets, posters, news, videos, etc.) for dissemination of the project at conferences and through patient organization websites and social media <br>
+                                            <i class="bx bx-chevrons-right"></i><b>Task 5.2.</b> Create a project website with information on project goals and results; it will also include an internal wiki type part to facilitate and enhance internal scientific work <br>
+                                            <i class="bx bx-chevrons-right"></i><b>Task 5.3.</b> Compiled Scientific journal publications/conference proceedings and / or press releases on selected results
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Deliverables</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>D5.1</b>Dissemination/communication plan  <br>
+                                            <i class="bx bx-chevrons-right"></i><b>D5.2</b> Project Website <br>
+                                            <i class="bx bx-chevrons-right"></i><b>D5.3</b> Scientific journal publications/conference proceedings and/or press releases (at least two) <br>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div><!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+
+
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">WP6. Project management </div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <b>Duration: <i>M01 - M24</i></b><br><br>
+                                <b>Objectives:</b> Ensure that the project meets its objectives and reporting requirements within scheduled timeframes.<br>
+                                <b> Description of Work:</b> Planning and monitoring the project progress by the PI.
+                            </div>
+                            <div class="accordion js-accordion">
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Tasks</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>Task 6.1.</b> Project coordination including bi-monthly research team meetings. The PI will be responsible for planning and monitoring the progress of the work, ensuring the timely submission of the deliverables and all progress reports. For that purpose the PI will organize bi-monthly progress meetings with all participants. The minutes of these meetings will be available to all participants.
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Deliverables</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <i class="bx bx-chevrons-right"></i><b>D6.1</b> Interim Progress report  <br>
+                                            <i class="bx bx-chevrons-right"></i><b>D6.2</b> Final project report
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div><!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+
+            </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="objectives.html">The Project</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="impact.html">Innovation and Impact</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="news.html">News and Events</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Key facts</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <b>Principal Investigator: </b> &nbsp;Nikolaos Skarmeas </li>
+
+                        <li><i class="bx bx-chevron-right"></i> <b>Project Duration: </b> &nbsp;24 months </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Start: </b> &nbsp;01/03/2024 </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Total Budget: </b> &nbsp;396.000<i class="bx bx-euro"></i> </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Host Institution:</b> &nbsp;<a href="https://school-en.med.uoa.gr/" target="_blank"> NKUA, Medical School, Aiginition Hospital</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact</h4>
+                    <p>
+                        Aiginiteio University Hospital <br>
+                        Vasilissis Sofias 72-74<br>
+                        Athina 115 28 <br><br>
+                        <strong>Phone:</strong> +30 210 7289358<br>
+                        <strong>Email:</strong> ns257 [at] columbia [dot] edu<br>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <h3>Fundings</h3>
+                    <p>The OSCOFAI project is implemented in the framework of H.F.R.I call "Basic research Financing (Horizontal support of all Sciences)" under the
+                        National Recovery and Resilience Plan "Greece 2.0" funded by the European Union – NextGenerationEU (H.F.R.I. Project Number: 16472).</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    var accordion = (function(){
+
+        var $accordion = $('.js-accordion');
+        var $accordion_header = $accordion.find('.js-accordion-header');
+        var $accordion_item = $('.js-accordion-item');
+
+        // default settings
+        var settings = {
+            // animation speed
+            speed: 400,
+
+            // close all other accordion items if true
+            oneOpen: false
+        };
+
+        return {
+            // pass configurable object literal
+            init: function($settings) {
+                $accordion_header.on('click', function() {
+                    accordion.toggle($(this));
+                });
+
+                $.extend(settings, $settings);
+
+                // ensure only one accordion is active if oneOpen is true
+                if(settings.oneOpen && $('.js-accordion-item.active').length > 1) {
+                    $('.js-accordion-item.active:not(:first)').removeClass('active');
+                }
+
+                // reveal the active accordion bodies
+                $('.js-accordion-item.active').find('> .js-accordion-body').show();
+            },
+            toggle: function($this) {
+
+                if(settings.oneOpen && $this[0] != $this.closest('.js-accordion').find('> .js-accordion-item.active > .js-accordion-header')[0]) {
+                    $this.closest('.js-accordion')
+                        .find('> .js-accordion-item')
+                        .removeClass('active')
+                        .find('.js-accordion-body')
+                        .slideUp()
+                }
+
+                // show/hide the clicked accordion item
+                $this.closest('.js-accordion-item').toggleClass('active');
+                $this.next().stop().slideToggle(settings.speed);
+            }
+        }
+    })();
+
+    $(document).ready(function(){
+        accordion.init({ speed: 300, oneOpen: true });
+    });
+</script>
+</body>
+
+</html>

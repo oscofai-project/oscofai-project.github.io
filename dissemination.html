@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>OSCOFAI</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/oscofai_favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        .containerD {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            margin-right: 10px;
+            padding: 10px 40px; /* Increase the left and right padding to make the buttons wider */
+            background-color: #265d79;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #307090;
+        }
+        .contentD {
+            display: none;
+            margin-top: 10px;
+            transition: height 0.5s ease; /* Smooth transition for height */
+            overflow: hidden;
+        }
+        .contentD.active {
+            display: block;
+            height: auto; /* Set height to auto to reveal content */
+        }
+
+        #footer {
+            margin-top: auto; /* Push the footer to the bottom */
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure that body takes up at least the full height of the viewport */
+        }
+
+        main {
+            flex: 1; /* Allow the main content to grow to fill available space */
+        }
+    </style>
+
+    <script>
+        function toggleParagraph(id) {
+            var content = document.getElementById(id);
+            var allContents = document.querySelectorAll('.contentD');
+
+            // Remove 'active' class from all paragraphs
+            allContents.forEach(function(elem) {
+                elem.classList.remove('active');
+            });
+
+            // Toggle the visibility of the clicked paragraph
+            content.classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/oscofai_logo_N.png" alt="" class="img-fluid"></a>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+
+                <li><a class="active " href="index.html">Home</a></li>
+                <li class="dropdown"><a href="#"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <!--              <li><a href="ataglance.html">OSCOFAI at a Glance</a></li>-->
+                        <li><a href="objectives.html">Objectives</a></li>
+                        <li><a href="workplan.html">Work Structure</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="impact.html">Innovation and Impact</a></li>
+
+                <li class="dropdown"><a href="#"><span>Knowledge Hub</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="deliverables.html">Deliverables</a></li>
+                        <!--              <li><a href="#">Presentations</a></li>-->
+                        <li><a href="dissemination.html">Dissemination Materials</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="news.html">News and Events</a></li>
+                <!--          <li class="dropdown"><a href="#"><span>News and Events</span> <i class="bi bi-chevron-down"></i></a>-->
+                <!--            <ul>-->
+                <!--              <li><a href="#">News</a></li>-->
+                <!--              <li><a href="#">Events</a></li>-->
+                <!--            </ul>-->
+                <!--          </li>-->
+
+                <!--          <li><a href="about.html">About</a></li>-->
+<!--                <li><a href="news.html">Services</a></li>-->
+                <!--          <li><a href="portfolio.html">Portfolio</a></li>-->
+                <!--          <li><a href="team.html">Team</a></li>-->
+                <!--          <li><a href="blog.html">Blog</a></li>-->
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Dissemination material</h2>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Knowledge Hub</li>
+                    <li>Dissemination material</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section class="about" data-aos="fade-up">
+        <div class="container">
+
+            <div class="row">
+<!--                <div class="col-lg-6">-->
+<!--                    <img src="assets/img/about.jpg" class="img-fluid" alt="">-->
+<!--                </div>-->
+                <div class="col-lg-12 pt-4 pt-lg-0">
+
+                    <div class="containerD">
+                        <button class="button" onclick="toggleParagraph('paragraph1')">Leaflets</button>
+                        <button class="button" onclick="toggleParagraph('paragraph2')">Posters</button>
+                        <button class="button" onclick="toggleParagraph('paragraph3')">Logo</button>
+                    </div>
+
+                    <div class="contentD" id="paragraph1">
+                        <br>
+                        <p align="center"><a href="#">OSCOFAI_LEAFLET.pdf <i class="bx bxs-file-pdf" style="font-size: 28px;"></i></a> </p>
+                    </div>
+
+                    <div class="contentD" id="paragraph2">
+                        <br>
+                        <p align="center"><a href="#">OSCOFAI_POSTER.pdf <i class="bx bxs-file-pdf" style="font-size: 28px;"></i></a> </p>
+                    </div>
+
+                    <div class="contentD" id="paragraph3">
+                        <br>
+                        <p align="center"><a href="assets/img/oscofai_logo.png" target="_blank">OSCOFAI_LOGO.pdf <i class="bx bxs-file-pdf" style="font-size: 28px;"></i></a> </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+
+
+
+
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="objectives.html">The Project</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="impact.html">Innovation and Impact</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="news.html">News and Events</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Key facts</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <b>Principal Investigator: </b> &nbsp;Nikolaos Skarmeas </li>
+
+                        <li><i class="bx bx-chevron-right"></i> <b>Project Duration: </b> &nbsp;24 months </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Start: </b> &nbsp;01/03/2024 </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Total Budget: </b> &nbsp;396.000<i class="bx bx-euro"></i> </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Host Institution:</b> &nbsp;<a href="https://school-en.med.uoa.gr/" target="_blank"> NKUA, Medical School, Aiginition Hospital</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact</h4>
+                    <p>
+                        Aiginiteio University Hospital <br>
+                        Vasilissis Sofias 72-74<br>
+                        Athina 115 28 <br><br>
+                        <strong>Phone:</strong> +30 210 7289358<br>
+                        <strong>Email:</strong> ns257 [at] columbia [dot] edu<br>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <h3>Fundings</h3>
+                    <p>The OSCOFAI project is implemented in the framework of H.F.R.I call "Basic research Financing (Horizontal support of all Sciences)" under the
+                        National Recovery and Resilience Plan "Greece 2.0" funded by the European Union – NextGenerationEU (H.F.R.I. Project Number: 16472).</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

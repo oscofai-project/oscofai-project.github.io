@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>OSCOFAI</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/oscofai_favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+
+        @import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 0 auto;
+            /*padding: 4rem;*/
+            width: 90%;
+        }
+
+        .accordion .accordion-item {
+            border-bottom: 1px solid #e5e5e5;
+            border: none;
+
+        }
+
+        .accordion .accordion-item button[aria-expanded=true] {
+            border-bottom: 1px solid #286d90;
+        }
+
+        .accordion button {
+            position: relative;
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding: 1em 0;
+            color: #286d90;
+            font-size: 1.15rem;
+            font-weight: 400;
+            border: none;
+            background: none;
+            outline: none;
+
+        }
+
+        .accordion button:hover,
+        .accordion button:focus {
+            cursor: pointer;
+            color: #03b5d2;
+        }
+
+        .accordion button:hover::after,
+        .accordion button:focus::after {
+            cursor: pointer;
+            color: #03b5d2;
+            border: 1px solid #03b5d2;
+        }
+
+        .accordion button .accordion-title {
+            padding: 1em 1.5em 1em 0;
+        }
+
+        .accordion button .icon {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+            border: 1px solid;
+            border-radius: 22px;
+        }
+
+        .accordion button .icon::before {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 9px;
+            left: 5px;
+            width: 10px;
+            height: 2px;
+            background: currentColor;
+        }
+
+        .accordion button .icon::after {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 9px;
+            width: 2px;
+            height: 10px;
+            background: currentColor;
+        }
+
+        .accordion button[aria-expanded=true] {
+            color: #03b5d2;
+        }
+
+        .accordion button[aria-expanded=true] .icon::after {
+            width: 0;
+        }
+
+        .accordion button[aria-expanded=true] + .accordion-content {
+            opacity: 1;
+            max-height: 49em;  /*how big*/
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+
+        .accordion .accordion-content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 200ms linear, max-height 200ms linear;
+            will-change: opacity, max-height;
+        }
+
+        .accordion .accordion-content p {
+            /*font-size: 1rem;*/
+            /*font-weight: 100;*/
+            margin: 2em 0;
+            font-size: .95em;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/oscofai_logo_N.png" alt="" class="img-fluid"></a>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+
+                <li><a class="active " href="index.html">Home</a></li>
+                <li class="dropdown"><a href="#"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <!--              <li><a href="ataglance.html">OSCOFAI at a Glance</a></li>-->
+                        <li><a href="objectives.html">Objectives</a></li>
+                        <li><a href="workplan.html">Work Structure</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="impact.html">Innovation and Impact</a></li>
+
+                <li class="dropdown"><a href="#"><span>Knowledge Hub</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="deliverables.html">Deliverables</a></li>
+                        <!--              <li><a href="#">Presentations</a></li>-->
+                        <li><a href="dissemination.html">Dissemination Materials</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="news.html">News and Events</a></li>
+                <!--          <li class="dropdown"><a href="#"><span>News and Events</span> <i class="bi bi-chevron-down"></i></a>-->
+                <!--            <ul>-->
+                <!--              <li><a href="#">News</a></li>-->
+                <!--              <li><a href="#">Events</a></li>-->
+                <!--            </ul>-->
+                <!--          </li>-->
+
+                <!--          <li><a href="about.html">About</a></li>-->
+<!--                <li><a href="news.html">Services</a></li>-->
+                <!--          <li><a href="portfolio.html">Portfolio</a></li>-->
+                <!--          <li><a href="team.html">Team</a></li>-->
+                <!--          <li><a href="blog.html">Blog</a></li>-->
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Objectives</h2>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>The Project</li>
+                    <li>Objectives</li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+    <!-- ======= About Us Section ======= -->
+    <section class="about" data-aos="fade-up">
+        <div class="container">
+
+            <p>In order to substantiate the vision of OSCOFAI, the overall activities will target the following specific aims.</p><br>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Aim 1: Explore the associations between sleep-wake cycle data and cognitive function</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p><b>Aim 1</b> will use sleep-wake cycle data from 7 days of actigraphy recordings to derive traditional summary actigraphy measures and relate them with
+                                <b>1A)</b> cognitive function (global composite z scores and individual
+                                composite domains z scores) at baseline in approximately 200 subjects aged >45 years from the Aiginition Longitudinal
+                                Biomarker Investigation Of Neurodegeneration (ALBION) cohort, and <b>1B)</b> rates of cognitive change over a 2-year period.</p>
+                                <img src="assets/img/aims/aim1n.png" align="right" style=" width: 30%;height: auto;" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Aim 2: Create a predictive modelling tool of cognitive function from the actigraphy
+data using Machine Learning – AI methods</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+
+                            <p><b>Aim 2</b> will analyze the ALBION actigraphy and clinical
+                                assessment dataset using advanced signal processing
+                                and machine learning (ML) methods. In <b>2A) we will
+                                develop the end-to-end ML/AI pipeline</b> (signal
+                                processing/feature engineering/machine learning) to
+                                analyze and extract knowledge from actigraphy time series datasets, and in <b>2B) we will use the developed ML/AI pipeline to process specifically the ALBION </b> and identify combinations of
+                                actigraphy-related features and machine learning algorithms that synergistically can predict, with high sensitivity and specificity, cognitive impairment related measures.</p>
+                            <img align="right" style=" width: 37%;height: auto;" src="assets/img/aims/aim2.png">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Aim 3: Explore the mediating mechanisms in the relationship between sleep-wake data and
+cognitive health</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p><b>Aim 3</b> will investigate potential mediating mechanisms in the relationship between 7-day sleep-wake actigraphy and cognition.
+                                Such biological mechanisms will be approximated by a long list of biomarkers illustrated in the image.
+                                We will use both traditional statistical <b>3A)</b> and more recent ML/AI approaches <b>3B)</b>.
+<!--                                In particular, for <b>3A)</b> we will compute mediating effects-->
+<!--                                of multiple mediators using linear regression, adapting the formulas from VanderWeele and Vansteelandt.-->
+<!--                                Moreover, for <b>3B)</b> we aim to identify the simplest ML models using the smallest number of actigraphy-extracted features,-->
+<!--                                selected among features identified as being strong predictors for at least one of the biological mechanisms, that when used synergistically-->
+<!--                                provide accurate predictions of cognitive decline-related measures.-->
+                                <br>
+                                We will conclude by building an <b>"AI Advisor"</b> tool that combines
+                                the best models to assist clinicians in stratifying patients regarding cognitive decline while also being able to explain how it arrived at its recommendations
+                                (eXplainable AI approach, XAI). The clinician-expert may reject the recommendation, and the XAI tool will be able to assimilate their decision into its continual
+                                learning scheme and keep improving itself as more patient data enter the study.</p>
+                            <img align="right" style=" width: 37%;height: auto;" src="assets/img/aims/aim3.png">
+                        </div>
+                    </div>
+<!--                    <div class="accordion-item">-->
+<!--                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>-->
+<!--                        <div class="accordion-content">-->
+<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="accordion-item">-->
+<!--                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>-->
+<!--                        <div class="accordion-content">-->
+<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= About Section ======= -->
+<!--    <section class="about" data-aos="fade-up">-->
+<!--        <div class="container">-->
+
+<!--            <div class="row">-->
+<!--                <div class="col-lg-6">-->
+<!--                    <img src="assets/img/about.jpg" class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="col-lg-6 pt-4 pt-lg-0">-->
+<!--                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>-->
+<!--                    <p class="fst-italic">-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore-->
+<!--                        magna aliqua.-->
+<!--                    </p>-->
+<!--                    <ul>-->
+<!--                        <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>-->
+<!--                        <li><i class="bi bi-check2-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>-->
+<!--                        <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>-->
+<!--                    </ul>-->
+<!--                    <p>-->
+<!--                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate-->
+<!--                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in-->
+<!--                        culpa qui officia deserunt mollit anim id est laborum-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </section>&lt;!&ndash; End About Section &ndash;&gt;-->
+
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="objectives.html">The Project</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="impact.html">Innovation and Impact</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="news.html">News and Events</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Key facts</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <b>Principal Investigator: </b> &nbsp;Nikolaos Skarmeas </li>
+
+                        <li><i class="bx bx-chevron-right"></i> <b>Project Duration: </b> &nbsp;24 months </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Start: </b> &nbsp;01/03/2024 </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Total Budget: </b> &nbsp;396.000<i class="bx bx-euro"></i> </li>
+                        <li><i class="bx bx-chevron-right"></i> <b>Host Institution:</b> &nbsp;<a href="https://school-en.med.uoa.gr/" target="_blank"> NKUA, Medical School, Aiginition Hospital</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact</h4>
+                    <p>
+                        Aiginiteio University Hospital <br>
+                        Vasilissis Sofias 72-74<br>
+                        Athina 115 28 <br><br>
+                        <strong>Phone:</strong> +30 210 7289358<br>
+                        <strong>Email:</strong> ns257 [at] columbia [dot] edu<br>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <h3>Fundings</h3>
+                    <p>The OSCOFAI project is implemented in the framework of H.F.R.I call "Basic research Financing (Horizontal support of all Sciences)" under the
+                        National Recovery and Resilience Plan "Greece 2.0" funded by the European Union – NextGenerationEU (H.F.R.I. Project Number: 16472).</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script>
+    const items = document.querySelectorAll(".accordion button");
+
+    function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+
+        for (i = 0; i < items.length; i++) {
+            items[i].setAttribute('aria-expanded', 'false');
+        }
+
+        if (itemToggle == 'false') {
+            this.setAttribute('aria-expanded', 'true');
+        }
+    }
+
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+</body>
+
+</html>
